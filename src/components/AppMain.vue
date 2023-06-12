@@ -1,23 +1,41 @@
 <script>
+import AppSection from './AppSection.vue'
 
+import { store } from '../store.js';
+
+export default{
+  components: {
+    AppSection
+  },
+  data(){
+    return{
+      store,
+    }
+  }
+}
 </script>
 
 <template>
  <main>
+    <section :id="section.id" v-for="section, index in store.sections" :key="section.id">
+        <AppSection v-if="section.id === 'newAgencySection'"
+        :indice="index" :sezione="section"/>
+    </section>
+    <!-- <AppSection v-if="store.sections[0].id === 'newAgencySection'"/> -->
     <!-- new agency section  -->
     <section>
         <div>
             <h1>
-
+                
             </h1>
             <p>
-
+                
             </p>
             <!-- new agency section cards  -->
             <div>
                 <!-- v-for  -->
                 <div>  <!--  <---- componente -->
-
+                    
                 </div>
             </div>
         </div>
@@ -116,5 +134,8 @@
 </template>
 
 <style lang="scss">
-
+#newAgencySection{
+    background-image: store.;
+    height: 100px;
+}
 </style>
