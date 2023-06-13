@@ -3,7 +3,8 @@
 export default{
     name: "AppCard",
     props: {
-        details: Object
+        // details: Object
+        carta: Object
     }
 }
 
@@ -11,8 +12,8 @@ export default{
 
 <template>
 
- <div>
-    <!-- titolo / intestazione  -->
+ <!-- <div>
+     titolo / intestazione  
     <div>
         <div v-if='details.img !== ""' class="img-container">
             <img :src="details.img" alt="">
@@ -20,6 +21,14 @@ export default{
         <h1 v-if='details.h1 !== ""'>{{ details.h1 }}</h1>
         <p v-if='details.h1 !== ""'>{{ details.p }}</p>
     </div>
+ </div> -->
+ <div>
+    <!-- titolo / intestazione  -->
+    <div v-if='details.img !== ""' class="img-container">
+        <img :src="details.img" alt="">
+    </div>
+    <h1 v-if='details.h1 !== ""'>{{ details.h1 }}</h1>
+    <p v-if='details.h1 !== ""'>{{ details.p }}</p>
  </div>
 
 </template>

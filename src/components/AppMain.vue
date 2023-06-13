@@ -1,11 +1,13 @@
 <script>
 import AppSection from './AppSection.vue'
+import AppCard from './AppCard.vue'
 
 import { store } from '../store.js';
 
 export default{
   components: {
-    AppSection
+    AppSection,
+    AppCard
   },
   data(){
     return{
@@ -20,7 +22,14 @@ export default{
     
     <!-- <AppSection v-if="store.sections[0].id === 'newAgencySection'"/> -->
     <!-- new agency section  -->
+    <section>
+        <h1></h1>
+        <p></p>
+        <AppCard v-for="card in store.sections[1].cards"  :carta="card"/>
 
+        
+    </section>
+    
     
     <!-- <section :id="section.id" v-for="section, index in store.sections" :key="section.id">
         <AppSection v-if="section.id === 'newAgencySection'"

@@ -88,10 +88,10 @@ export default{
 
 header{
     background: url("./images/1-hero-image.png");
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
-    height: 1000px;
-    width: 100%;
+    background-position: center;
+    
     color: $brand_white_color;
     nav{
         display: flex;
@@ -99,8 +99,8 @@ header{
         align-items: center;
     }
     jumbotron{
-        padding-top: 200px;
-        padding-bottom: 30px;
+        padding-top: 250px;
+        padding-bottom: 250px;
         text-align: start;
         display: block;
         width: 40%;
