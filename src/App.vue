@@ -27,5 +27,9 @@ export default{
 </template>
 
 <style lang="scss">
-
+.container{
+  width: 1080px;
+  margin: auto;
+  text-align: center;
+}
 </style>

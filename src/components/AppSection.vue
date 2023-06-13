@@ -21,7 +21,7 @@ export default{
 
 <template>
 
- <div>
+ <div class="container">
     <!-- titolo / intestazione  -->
     <div>
         <h1 v-if="sezione.h1 !==''">{{ sezione.intestazione.h1 }}</h1>
@@ -44,4 +44,9 @@ export default{
 
 <style lang="scss">
 
+.container{
+  width: 1080px;
+  margin: auto;
+  text-align: center;
+}
 </style>

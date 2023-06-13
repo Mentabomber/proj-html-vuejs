@@ -1,9 +1,40 @@
 import { reactive } from 'vue'
 
 export const store = reactive({
-sections:   [
+
+sections:   [   
+                {   id: "jumbotronSection",
+                    backgroundImg: "../images/1-hero-image.png",
+                    intestazione:   {
+                                        h1: "SEM Campaigns Made Simple With Avada",
+                                        p: "Sed ut persiiatis und eomnis iste natus error sit voluptatem accusantium doloremque laudentium.",
+                                    },
+                    cards:  [
+                                {
+                                    img: "",
+                                    h1: "",
+                                    p: "",
+                                    button: "",
+                                },
+                                {
+                                    img: "",
+                                    h1: "",
+                                    p: "",
+                                    button: "",
+                                }, 
+                                {
+                                    img: "",
+                                    h1: "",
+                                    p: "",
+                                    button: "",
+                                }
+
+                            ],
+                    buttons: ["BUY AVADA NOW","CONTACT US"]
+                    
+                },
                 {   id: "newAgencySection",
-                    backgroundImg: "1-hero-image.png",
+                    backgroundImg: "../images/1-hero-image.png",
                     intestazione:   {
                                         h1: "Meet The New Agency SEO Template From The Avada Team",
                                         p: "Sed ut persiiatis und eomnis iste natus error sit voluptatem accusantium doloremque laudentium.",
@@ -25,7 +56,8 @@ sections:   [
                                     p: "Prova delle proveProva delle proveProva delle proveProva delle proveProva delle proveProva delle proveProva delle proveProva delle proveProva delle proveProva delle proveProva delle proveProva delle proveProva delle proveProva delle prove"
                                 }
 
-                            ]
+                            ],
+                    buttons: []
                     
                 },
                 {   id: "giorgione",
@@ -50,7 +82,8 @@ sections:   [
                                     p: "Prova delle proveProva delle proveProva delle proveProva delle proveProva delle proveProva delle proveProva delle proveProva delle proveProva delle proveProva delle proveProva delle proveProva delle proveProva delle proveProva delle prove"
                                 }
 
-                            ]
+                            ],
+                    buttons: []
                     
                 },
             ]

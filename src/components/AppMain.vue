@@ -17,33 +17,15 @@ export default{
 
 <template>
  <main>
-    <section :id="section.id" v-for="section, index in store.sections" :key="section.id">
-        <AppSection v-if="section.id === 'newAgencySection'"
-        :indice="index" :sezione="section"/>
-    </section>
+    
     <!-- <AppSection v-if="store.sections[0].id === 'newAgencySection'"/> -->
     <!-- new agency section  -->
-    <section>
-        <div>
-            <h1>
-                
-            </h1>
-            <p>
-                
-            </p>
-            <!-- new agency section cards  -->
-            <div>
-                <!-- v-for  -->
-                <div>  <!--  <---- componente -->
-                    
-                </div>
-            </div>
-        </div>
-        <!-- div per solo background che comprende il 50% della section  -->
-        <div>
 
-        </div>
-    </section>
+    
+    <!-- <section :id="section.id" v-for="section, index in store.sections" :key="section.id">
+        <AppSection v-if="section.id === 'newAgencySection'"
+        :indice="index" :sezione="section"/>
+    </section> -->
 
     <!-- services section  -->
     <section>
@@ -134,8 +116,13 @@ export default{
 </template>
 
 <style lang="scss">
+@use '../styles/partials/variable.scss' as *;
 #newAgencySection{
-    background-image: store.;
+    // background-image: url(`{{store.sections[0].backgroundImg}}`);
+    background-color: $brand_grey_color;
     height: 100px;
+    color: $brand_primary;
+    padding: 20px;
+    
 }
 </style>
