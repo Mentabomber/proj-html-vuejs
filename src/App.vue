@@ -27,9 +27,13 @@ export default{
 </template>
 
 <style lang="scss">
+@use './styles/partials/variable.scss' as *;
 .container{
   width: 1080px;
   margin: auto;
   text-align: center;
+}
+.flex{
+  display: $d-flex;
 }
 </style>

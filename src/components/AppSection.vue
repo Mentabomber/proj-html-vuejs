@@ -1,7 +1,9 @@
 <script>
 import { store } from '../store.js';
 
-import AppCard from './AppCard.vue'
+
+import AppCardsContainer from './AppCardsContainer.vue'
+import AppImagesContainer from './AppImagesContainer.vue'
 
 export default{
     props: {
@@ -9,7 +11,9 @@ export default{
         sezione: Array
     },
     components: {
-        AppCard
+        AppCardsContainer,
+        AppImagesContainer
+
   },
   data(){
     return{
@@ -20,25 +24,33 @@ export default{
 </script>
 
 <template>
+<section>
 
- <div class="container">
+  <div class="container">
     <!-- titolo / intestazione  -->
     <div>
-        <h1 v-if="sezione.h1 !==''">{{ sezione.intestazione.h1 }}</h1>
-        <p v-if="sezione.h1 !==''">{{ sezione.intestazione.p }}</p>
+        <h2 v-if="sezione.title !==''">{{ sezione.intestazione.title }}</h2>
+        <p v-if="sezione.title !==''">{{ sezione.intestazione.text }}</p>
     </div>
-    <!-- cards  -->
-    <!-- v-if se proprietà = true crea cards -->
+    <!-- content container  -->
+    <!-- contenitore con cards -->
+    <div v-if="sezione.sectionType === 'cards' ">
+      <AppCardsContainer :section="sezione"/>
+    </div>
+
+    <!-- contenitore con immagini  -->
+    <div v-else>
+      <AppImagesContainer :section="sezione"/>
+    </div>
+    <!-- v-if se proprietà = true crea cards
     <AppCard v-for="card in sezione.cards"
-    :details="card"/>
-    <div>
-
+    :details="card"/> -->
+    <div v-if="sezione.button">
+      <button>{{ sezione.button.name }}</button>
     </div>
-    
-    
-
-
- </div>
+  </div>
+</section>
+ 
 
 </template>
 
