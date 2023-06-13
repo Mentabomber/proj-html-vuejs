@@ -39,7 +39,7 @@ export default{
     </div>
 
     <!-- contenitore con immagini  -->
-    <div v-else>
+    <div class="imgs-container" v-else>
       <AppImagesContainer :section="sezione"/>
     </div>
     <!-- v-if se proprietà = true crea cards
@@ -54,11 +54,15 @@ export default{
 
 </template>
 
-<style lang="scss">
+<style scoped lang="scss">
 
 .container{
   width: 1080px;
   margin: auto;
   text-align: center;
+}
+.imgs-container{
+  display: flex;
+  flex-wrap: wrap;
 }
 </style>

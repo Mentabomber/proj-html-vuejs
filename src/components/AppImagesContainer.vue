@@ -1,6 +1,6 @@
 <script>
 
-import AppCard from './cards/AppCard.vue'
+
 
 export default{
     name: "AppImagesContainer",
@@ -12,8 +12,8 @@ export default{
 </script>
 
 <template>
-<div class="img-container">
-    <img v-for="img in section.imgs" :src="img" alt="">
+<div class="img-container" v-for="img in section.imgs">
+    <img  :src="img" alt="">
 </div>
 
 
@@ -21,7 +21,7 @@ export default{
 
 <style scoped lang="scss">
     .img-container{
-        display: flex;
+        
         width: calc(100% / 3);
         height: calc(100% / 3);
         img{

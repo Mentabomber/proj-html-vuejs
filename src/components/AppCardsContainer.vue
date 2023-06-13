@@ -27,7 +27,6 @@ export default{
 <style scoped lang="scss">
 .cards-container{
     display: flex;
-    align-items: stretch;
     
 }
    
