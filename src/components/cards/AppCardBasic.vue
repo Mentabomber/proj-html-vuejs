@@ -19,6 +19,9 @@ export default{
         <div v-if='cardBody.cardTitle'>
             <h2>{{ cardBody.cardTitle }}</h2>
         </div>
+        <div v-if='cardBody.cardDate'>
+            <span>{{ cardBody.cardDate }}</span>
+        </div>
         <div v-if='cardBody.cardText'>
             <p >{{ cardBody.cardText }}</p>
         </div>
@@ -33,12 +36,10 @@ export default{
 </template>
 
 <style lang="scss">
+
 .img-container{
     width: 15px;
     height: 15px;
-    // img{
-        
-    // }
 }
 .card{
     

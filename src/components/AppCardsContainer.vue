@@ -1,6 +1,7 @@
 <script>
 
 import AppCardBasic from './cards/AppCardBasic.vue'
+import AppCardPlans from './cards/AppCardPlans.vue'
 
 export default{
     name: "AppCardsContainer",
@@ -10,6 +11,7 @@ export default{
     },
     components: {
         AppCardBasic,
+        AppCardPlans
 
     }
 }
@@ -18,8 +20,11 @@ export default{
 
 <template>
 
-<div class="cards-container">
+<div class="cards-container basic" v-if="section.cardType === 'basic'">
     <AppCardBasic v-for="card in section.cards" :cardBody="card"/>  
+</div>
+<div class="cards-container plans" v-else-if="section.cardType === 'plans'">
+    <AppCardPlans v-for="card in section.cards" :cardBody="card"/>  
 </div>
 
 </template>
@@ -27,7 +32,15 @@ export default{
 <style scoped lang="scss">
 .cards-container{
     display: flex;
+    justify-content: center;
     
+    .basic{
+
+    }
+    .plans {
+
+        
+    }  
 }
    
 </style>
