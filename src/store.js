@@ -236,28 +236,28 @@ sections:   [
                                 {
                                     cardTitle: "Standard",
                                     cardText: "",
-                                    cardPrice: "19,99",
+                                    cardPrice: "19",
                                     cardInfos: ["5 Projects", "5 GB Storage", "Unlimited Users"],
                                     cardLink: "START TODAY"
                                 },
                                 {
                                     cardTitle: "Premium",
                                     cardText: "",
-                                    cardPrice: "29,99",
+                                    cardPrice: "29",
                                     cardInfos: ["10 Projects", "15 GB Storage", "Unlimited Users"],
                                     cardLink: "START TODAY"
                                 },
                                 {
                                     cardTitle: "Professional",
                                     cardText: "",
-                                    cardPrice: "39,99",
+                                    cardPrice: "39",
                                     cardInfos: ["15 Projects", "30 GB Storage", "Unlimited Users"],
                                     cardLink: "START TODAY"
                                 },
                                 {
                                     cardTitle: "Extreme",
                                     cardText: "",
-                                    cardPrice: "59,99",
+                                    cardPrice: "59",
                                     cardInfos: ["Unlimited Projects", "Unlimited Storage", "Unlimited Users"],
                                     cardLink: "START TODAY"
                                 },

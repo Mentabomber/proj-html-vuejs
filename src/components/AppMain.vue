@@ -123,6 +123,9 @@ export default{
     .plan-container{
         background-color: $brand_grey_color;
         color: black;
+        .plan-price{
+            font-size: 25px;
+        }
     }
 }
 #ourNews{
