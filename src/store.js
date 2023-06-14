@@ -180,7 +180,7 @@ sections:   [
                                 },
                                 {
                                     img: "./images/related-service-4-320x202.jpg",
-                                    cardTitle: "Ciaone",
+                                    cardTitle: "SEO Tips For Your Startup",
                                     cardText: "Sed ut persiiatis und eomnis iste natus error sit voluptatem accusantium doloremque laudentium.",
                                     cardDate: "November 1st, 2017",
                                 }, 
@@ -196,6 +196,34 @@ sections:   [
                                 name: "GO TO NEWS",
                                 link: "",
                             }
+                    
+                },
+                {   
+                    id: "clientsFeedback",
+                    backgroundImg: "../images/1-hero-image.png",
+                    intestazione:   {
+                                        title: "What Our Clients Say",
+                                        text: "",
+                                    },
+                    cardType: "basic",
+                    sectionType: "cards",
+                    cards:  [
+                                {
+                                    img: "./images/testimonials-2.jpg",
+                                    cardTitle: "",
+                                    cardText: "Ability proceeds from a fusion of skills, knowledge, understanding and imagination, consolidated by experience.",
+                                    cardDate: "",
+                                    credentials: ["Luis Desalvo, ", "CREO TECH",],
+                                },
+                                {
+                                    img: "./images/testimonials-1.jpg",
+                                    cardTitle: "Why You Need A SEO Agency Now",
+                                    cardText: "Ability proceeds from a fusion of skills, knowledge, understanding and imagination, consolidated by experience.",
+                                    cardDate: "",
+                                    credentials: ["Giorgia Rossi, ", "CREO TECH",],
+                                }, 
+                                
+                            ],
                     
                 },
             ]

@@ -51,11 +51,24 @@ export default{
     .img-container{
         height: 50%;
         width: 100%;
+        margin-bottom: 35px;
     }
     .card{
-        h2{
-            
+        
+    }
+}
+
+#clientsFeedback{
+    .img-container{
+        height: 50%;
+        width: 100%;
+        margin-bottom: 40px;
+        img{
+            border-radius: 50%;
         }
+    }
+    .card{
+        
     }
 }
 </style>

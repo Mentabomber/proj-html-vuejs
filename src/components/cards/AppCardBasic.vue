@@ -29,7 +29,7 @@ export default{
             <a href="#">{{ cardBody.cardLink }}</a>
         </div>
         <div v-if="cardBody.credentials">
-            <span>{{ cardBody.credentials }}</span>
+            <span v-for="credential in cardBody.credentials">{{ credential }}</span>
         </div>
     </div>
 
