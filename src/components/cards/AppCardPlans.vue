@@ -23,7 +23,7 @@ export default{
             </ul>
         </div>
         <div v-if='cardBody.cardLink'>
-            <button>{{ cardBody.cardLink }}</button>
+            <button >{{ cardBody.cardLink }}</button>
         </div>
 
         
@@ -35,9 +35,9 @@ export default{
 <style lang="scss">
 
 .plan-container{
-    border: 1px solid black;
     margin: 5px;
     padding: 15px;
+    
     ul{
         list-style: none;
     }

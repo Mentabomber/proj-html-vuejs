@@ -21,9 +21,7 @@ export default{
 
 <style scoped lang="scss">
     .img-container{
-        
-        width: calc(100% / 3);
-        height: calc(100% / 3);
+  
         img{
             width: 100%;
             height: 100%;

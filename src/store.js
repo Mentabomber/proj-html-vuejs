@@ -209,13 +209,13 @@ sections:   [
                     id: "ourWork",
                     backgroundImg: "../images/1-hero-image.png",
                     intestazione:   {
-                                        title: "Meet The New Agency SEO Template From The Avada Team",
+                                        title: "Our Work",
                                         text: "Sed ut persiiatis und eomnis iste natus error sit voluptatem accusantium doloremque laudentium.",
                                     },
                     cardType: "basic",
                     sectionType: "pictures",
                     imgs:  [
-                              "./images/case-study-gallery-2.jpg","./images/case-study-gallery-1-1.jpg","./images/case-study-gallery-1-1.jpg","./images/case-study-gallery-1-1.jpg","./images/case-study-gallery-1-1.jpg","./images/case-study-gallery-1-1.jpg"  
+                              "./images/case-study-gallery-3-1.jpg","./images/case-study-gallery-2.jpg","./images/case-study-gallery-1-1.jpg","./images/case-study-gallery-4-1.jpg","./images/case-study-gallery-5-1.jpg","./images/case-study-gallery-6-1.jpg"  
                             ],
                     button: {
                                 name: "VIEW OUR WORK",

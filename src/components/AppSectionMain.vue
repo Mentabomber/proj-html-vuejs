@@ -49,7 +49,7 @@ export default{
       <img :src="sezione.img " alt="">
     </div>
     <div v-if="sezione.button">
-      <button>{{ sezione.button.name }}</button>
+      <button class="btn-orange">{{ sezione.button.name }}</button>
     </div>
   </div>
 </section>
@@ -72,7 +72,7 @@ export default{
   width: 45%;
   font-size: 30px;
   margin: auto;
-  padding-top:20px ;
+  padding-top:50px ;
 } 
 .section-text{
   width: 45%;

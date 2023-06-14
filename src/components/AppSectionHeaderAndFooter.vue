@@ -130,15 +130,7 @@ nav{
             padding-right: 5px;
         }
     }
-    .btn-orange{
-        background-color: $brand_gold_color;
-        padding: 10px;
-        border-radius: 25px;
-        border: none;
-        color: white;
-        font-size: 12px;
-        font-weight: bold;
-    }
+
 }
 #footer-nav{
     margin-top: 20px;

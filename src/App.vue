@@ -37,7 +37,17 @@ export default{
   display: $d-flex;
 }
 body {
-    // non capisco perché ci sia un margine tra ogni section quindi lascia una riga di colore uguale al body quindi ho messo il body con questo colore cosi non si nota. da fixare
+
     background-color: $brand_grey_color; 
 }
+.btn-orange{
+        background-color: $brand_gold_color;
+        padding: 10px;
+        border-radius: 25px;
+        border: none;
+        color: white;
+        font-size: 12px;
+        font-weight: bold;
+        margin: 50px 0 70px 0;
+    }
 </style>

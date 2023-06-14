@@ -106,7 +106,25 @@ export default{
     }
  
 }
+#ourWork{
+    .img-container{
+        width: calc(100% / 3);
+        height: calc(100% / 3);
+        padding: 5px;
+    }
 
+}
+#ourPlans{
+    background: url("./images/background1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white;
+    .plan-container{
+        background-color: $brand_grey_color;
+        color: black;
+    }
+}
 #ourNews{
     .img-container{
         height: 50%;
