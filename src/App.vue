@@ -36,4 +36,8 @@ export default{
 .flex{
   display: $d-flex;
 }
+body {
+    // non capisco perché ci sia un margine tra ogni section quindi lascia una riga di colore uguale al body quindi ho messo il body con questo colore cosi non si nota. da fixare
+    background-color: $brand_grey_color; 
+}
 </style>

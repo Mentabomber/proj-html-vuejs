@@ -138,7 +138,7 @@ footer: [
 sections:   [   
                 
                 {   id: "newAgencySection",
-                    backgroundImg: "../images/1-hero-image.png",
+                    img: "../images/agency-seo-desk-front.jpg",
                     intestazione:   {
                                         title: "Meet The New Agency SEO Template From The Avada Team",
                                         text: "Sed ut persiiatis und eomnis iste natus error sit voluptatem accusantium doloremque laudentium.",
@@ -147,19 +147,19 @@ sections:   [
                     sectionType: "cards",
                     cards:  [
                                 {
-                                    img: "./images/icons/gear-solid.svg",
-                                    cardTitle: "Ciao",
-                                    cardText: ""
+                                    img: "./images/icons/road-solid.svg",
+                                    cardTitle: "Establish Goals",
+                                    cardText: "Aliquam non elit lacus. Praesent aliquet, ipsum id scelerisque vonaliis, mi liula eusimod odio, vel dicutm mi risus a mi."
                                 },
                                 {
-                                    img: "",
-                                    cardTitle: "Ciaone",
-                                    cardText: "Prova delle prove"
+                                    img: "./images/icons/video-solid.svg",
+                                    cardTitle: "Work With a Team",
+                                    cardText: "Aliquam non elit lacus. Praesent aliquet, ipsum id scelerisque vonaliis, mi liula eusimod odio, vel dicutm mi risus a mi."
                                 }, 
                                 {
-                                    img: "./images/icons/gear-solid.svg",
-                                    cardTitle: "",
-                                    cardText: "Prova delle proveProva delle proveProva delle proveProva delle proveProva delle proveProva delle proveProva delle proveProva delle proveProva delle proveProva delle proveProva delle proveProva delle proveProva delle proveProva delle prove"
+                                    img: "./images/icons/droplet-solid.svg",
+                                    cardTitle: "Get Results",
+                                    cardText: "Aliquam non elit lacus. Praesent aliquet, ipsum id scelerisque vonaliis, mi liula eusimod odio, vel dicutm mi risus a mi."
                                 }
 
                             ],
@@ -168,7 +168,7 @@ sections:   [
                                 
                 {   
                     id: "services",
-                    backgroundImg: "../images/1-hero-image.png",
+                    img: "",
                     intestazione:   {
                                         title: "See Our Top Notch Services",
                                         text: "Sed ut persiiatis und eomnis iste natus error sit voluptatem accusantium doloremque laudentium.",
@@ -177,7 +177,7 @@ sections:   [
                     sectionType: "cards",
                     cards:  [
                                 {
-                                    img: "./images/icons/gear-solid.svg",
+                                    img: "./images/icons/google.svg",
                                     cardTitle: "Google SEO",
                                     cardText: "Sed ut persiiatis und eomnis iste natus error sit voluptatem accusantium doloremque laudentium.Sed ut persiiatis und eomnis iste natus error sit voluptatem accusantium doloremque laudentium.",
                                     cardLink: "Read More >"
@@ -189,13 +189,13 @@ sections:   [
                                     cardLink: "Read More >"
                                 }, 
                                 {
-                                    img: "./images/icons/gear-solid.svg",
+                                    img: "./images/icons/building-solid.svg",
                                     cardTitle: "Local SEO",
                                     cardText: "Sed ut persiiatis und eomnis iste natus error sit voluptatem accusantium doloremque laudentium.Sed ut persiiatis und eomnis iste natus error sit voluptatem accusantium doloremque laudentium.",
                                     cardLink: "Read More >"
                                 },
                                 {
-                                    img: "./images/icons/gear-solid.svg",
+                                    img: "./images/icons/chart-column-solid.svg",
                                     cardTitle: "SEO Analysis",
                                     cardText: "Sed ut persiiatis und eomnis iste natus error sit voluptatem accusantium doloremque laudentium.Sed ut persiiatis und eomnis iste natus error sit voluptatem accusantium doloremque laudentium.",
                                     cardLink: "Read More >"

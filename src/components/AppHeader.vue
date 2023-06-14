@@ -63,7 +63,6 @@ header{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    
     color: $brand_white_color;
     nav{
         display: flex;

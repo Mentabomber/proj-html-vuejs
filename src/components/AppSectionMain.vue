@@ -29,8 +29,8 @@ export default{
   <div class="container">
     <!-- titolo / intestazione  -->
     <div>
-        <h2 v-if="sezione.title !==''">{{ sezione.intestazione.title }}</h2>
-        <p v-if="sezione.title !==''">{{ sezione.intestazione.text }}</p>
+        <h2 class="section-title" v-if="sezione.title !==''">{{ sezione.intestazione.title }}</h2>
+        <p class="section-text" v-if="sezione.title !==''">{{ sezione.intestazione.text }}</p>
     </div>
     <!-- content container  -->
     <!-- contenitore con cards -->
@@ -45,6 +45,9 @@ export default{
     <!-- v-if se proprietà = true crea cards
     <AppCard v-for="card in sezione.cards"
     :details="card"/> -->
+    <div class="section-img" v-if="sezione.img">
+      <img :src="sezione.img " alt="">
+    </div>
     <div v-if="sezione.button">
       <button>{{ sezione.button.name }}</button>
     </div>
@@ -64,5 +67,26 @@ export default{
 .imgs-container{
   display: flex;
   flex-wrap: wrap;
+}
+.section-title{
+  width: 45%;
+  font-size: 30px;
+  margin: auto;
+  padding-top:20px ;
+} 
+.section-text{
+  width: 45%;
+  margin: 10px auto;
+  line-height: 25px;
+}
+.section-img{
+  width: 100%;
+  height: 100%;
+
+  img{
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
 }
 </style>

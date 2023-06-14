@@ -37,15 +37,19 @@ export default{
 
 <style lang="scss">
 
-.img-container{
-    width: 15px;
-    height: 15px;
-}
+
 .card{
-    
-    border: 1px solid black;
+
     padding: 20px;
     margin: 0 5px;
     width: 100%;
+    .img-container{
+    width: 30px;
+    height: 30px;
+    img{
+        height: 100%;
+        width: 100%;
+    }
+}
 }
 </style>
