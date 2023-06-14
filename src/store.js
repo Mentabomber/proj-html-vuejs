@@ -1,38 +1,102 @@
 import { reactive } from 'vue'
 
 export const store = reactive({
- 
-jumbotron:      {   
-                    id: "jumbotronSection",
-                    backgroundImg: "../images/1-hero-image.png",
-                    intestazione:   {
-                                        title: "SEM Campaigns Made Simple With Avada",
-                                        text: "Sed ut persiiatis und eomnis iste natus error sit voluptatem accusantium doloremque laudentium.",
-                                    },
-                    cardType: "basic",
-                    cards:  [
-                                {
-                                    img: "",
-                                    cardTitle: "",
-                                    p: "",
-                                    button: "",
-                                },
-                                {
-                                    img: "",
-                                    cardTitle: "",
-                                    p: "",
-                                    button: "",
-                                }, 
-                                {
-                                    img: "",
-                                    cardTitle: "",
-                                    p: "",
-                                    button: "",
-                                }
+header: [
+            {
+                title: "",
+                text: "",
+                button: ""
+            },
+            {
+                img: "../images/logo_seo_w_1x.png",
+                listOfLinksName:    [
+                    {   
+                        linkType: "basic",
+                        linkName: "Home",
+                        linkButtonName: ""
+                    },
+                    {   
+                        linkType: "basic",
+                        linkName: "Who We Are",
+                        linkButtonName: ""
+                    },
+                    {   
+                        linkType: "basic",
+                        linkName: "What We Do",
+                        linkButtonName: ""
+                    },
+                    {   
+                        linkType: "basic",
+                        linkName: "Where We Work",
+                        linkButtonName: ""
+                    },
+                    {   
+                        linkType: "basic+button",
+                        linkName: "Careers ",
+                        linkButtonName: "Apply"
+                    },
+                    {   
+                        linkType: "basic",
+                        linkName: "News",
+                        linkButtonName: ""
+                    },
+                    {   
+                        linkType: "button",
+                        linkName: "GET IN TOUCH NOW",
+                        linkButtonName: ""
+                    }
 
-                            ],
-                    buttons: ["BUY AVADA NOW","CONTACT US"]   
-                },
+                    
+                                    ],
+                listOfCopyrights: [],
+                socialLinks: []
+            }
+        ],
+jumbotron:  {   
+                id: "jumbotronSection",
+                backgroundImg: "../images/1-hero-image.png",
+                intestazione:   {
+                                    title: "SEM Campaigns Made Simple With Avada",
+                                    text: "Sed ut persiiatis und eomnis iste natus error sit voluptatem accusantium doloremque laudentium.",
+                                },
+                cardType: "basic",
+                cards:  [
+                            {
+                                img: "",
+                                cardTitle: "",
+                                p: "",
+                                button: "",
+                            },
+                            {
+                                img: "",
+                                cardTitle: "",
+                                p: "",
+                                button: "",
+                            }, 
+                            {
+                                img: "",
+                                cardTitle: "",
+                                p: "",
+                                button: "",
+                            }
+
+                        ],
+                buttons: ["BUY AVADA NOW","CONTACT US"]   
+            },
+footer: [
+            {
+                title: "",
+                text: "",
+                button: ""
+            },
+            {
+                img: "",
+                listOfLinks: [],
+                listOfCopyrights: [],
+                socialLinks: []
+            }
+    
+        ],
 sections:   [   
                 
                 {   id: "newAgencySection",
@@ -226,7 +290,11 @@ sections:   [
                             ],
                     
                 },
-            ]
+            ],
+avadaLogos: [
+                "./images/clients_partner_5-200x202.png",
+                "./images/clients_partner_6-200x202.png", "./images/clients_partner_1-200x202.png", "./images/clients_partner_2-200x202.png"
+            ],
 
 
 });

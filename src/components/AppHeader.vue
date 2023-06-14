@@ -1,11 +1,11 @@
 <script>
-import AppSection from './AppSection.vue'
+import AppSectionHeaderAndFooter from './AppSectionHeaderAndFooter.vue'
 
 import { store } from '../store.js';
 
 export default{
   components: {
-    AppSection
+    AppSectionHeaderAndFooter
   },
   data(){
     return{
@@ -20,38 +20,10 @@ export default{
 <!-- header navbar  -->
 
 <header>
+    
     <div class="container">
-        <nav>
-            <div id="nav-logo">
-                <img src="images/logo_seo_w_1x.png" alt="">
-            </div>
-            <div id="nav-content-list">
-                <ul>
-                    <li>
-                        <span>Home</span>
-                    </li>
-                    <li>
-                    <span>Who We Are</span> 
-                    </li>
-                    <li>
-                        <span>What We Do</span>
-                    </li>
-                    <li>
-                        <span>Where We Work</span>
-                    </li>
-                    <li>
-                        <span>Careers</span> <button>Apply</button>
-                    </li>
-                    <li>
-                        <span>News</span> 
-                    </li>
-                    <li>
-                        <button class="buttons button-gold">GET IN TOUCH NOW</button>
-                    </li>
-
-                </ul>
-            </div>
-        </nav>
+        <AppSectionHeaderAndFooter :details="'header'"/>
+        
         <jumbotron>
         <!-- header jumbotron  -->
             <h1>SEM Campaigns Made Simple With Avada</h1>

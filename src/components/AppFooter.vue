@@ -1,10 +1,25 @@
 <script>
+import AppSectionHeaderAndFooter from './AppSectionHeaderAndFooter.vue'
 
+import { store } from '../store.js';
+
+export default{
+  components: {
+    AppSectionHeaderAndFooter
+  },
+  data(){
+    return{
+      store,
+    }
+  }
+}
 </script>
 
 <template>
  <footer>
-
+    <div class="container">
+        <AppSectionHeaderAndFooter :details="'footer'"/>
+    </div>
     <!-- contact us section   -->
     <section>
         <h1>

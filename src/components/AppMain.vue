@@ -1,11 +1,11 @@
 <script>
-import AppSection from './AppSection.vue'
+import AppSectionMain from './AppSectionMain.vue'
 
 import { store } from '../store.js';
 
 export default{
   components: {
-    AppSection,
+    AppSectionMain,
   },
   data(){
     return{
@@ -17,13 +17,21 @@ export default{
 
 <template>
     <main>
-        
+        <!-- sezioni  -->
         <section >
-            <AppSection :id="section.id" v-for="section, index in store.sections" :key="section.id"
+            <AppSectionMain :id="section.id" v-for="section, index in store.sections" :key="section.id"
             :indice="index" :sezione="section"/>
         </section>
 
-        
+        <!-- avada logos  -->
+        <section>
+            <div id="logo-section" class="container">
+                <div v-for="logo in store.avadaLogos" id="logo-container">
+                    <img :src="logo" alt="logo_img">
+                </div>
+            </div>
+
+        </section>
     </main>
 </template>
 
@@ -70,5 +78,13 @@ export default{
     .card{
         
     }
+}
+#logo-section{
+    border-top: 1px solid gray;
+    display: $d-flex;
+    justify-content: space-between;
+}
+#logo-container{
+    
 }
 </style>
