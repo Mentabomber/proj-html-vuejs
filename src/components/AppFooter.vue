@@ -1,11 +1,13 @@
 <script>
 import AppSectionHeaderAndFooter from './AppSectionHeaderAndFooter.vue'
+import AppSectionMain from './AppSectionMain.vue'
 
 import { store } from '../store.js';
 
 export default{
   components: {
-    AppSectionHeaderAndFooter
+    AppSectionHeaderAndFooter,
+    AppSectionMain
   },
   data(){
     return{
@@ -17,49 +19,10 @@ export default{
 
 <template>
  <footer>
+
     <div class="container">
+        <AppSectionMain :sezione="store.footer[0]"/>
         <AppSectionHeaderAndFooter :details="'footer'"/>
-    </div>
-    <!-- contact us section   -->
-    <section>
-        <h1>
-
-        </h1>
-        <p>
-
-        </p>
-        <button></button>
-    </section>
-
-    <!-- infos and links section  -->
-    <section>
-
-        <div id="footer-logo">
-
-        </div>
-        <!-- footer navbar  -->
-        <div>
-            <ul>
-                <!-- v-for  -->
-                <li></li>
-            </ul>
-        </div>
-        <!-- footer copyrights  -->
-        <div>
-            <ul>
-                <!-- v-for  -->
-                <li></li>
-            </ul>
-        </div>
-        <!-- footer social links  -->
-        <div>
-            <!-- v-for  -->
-            <img src="" alt="">
-        </div>
-    </section>
-    <!-- send me at the start button  -->
-    <div>
-        <button></button>
     </div>
     
  </footer>

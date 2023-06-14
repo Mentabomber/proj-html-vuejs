@@ -8,7 +8,7 @@ import AppImagesContainer from './AppImagesContainer.vue'
 export default{
     props: {
         indice: Number,
-        sezione: Array
+        sezione: Array,
     },
     components: {
         AppCardsContainer,

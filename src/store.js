@@ -13,37 +13,44 @@ header: [
                     {   
                         linkType: "basic",
                         linkName: "Home",
-                        linkButtonName: ""
+                        linkButtonName: "",
+                        active: true
                     },
                     {   
                         linkType: "basic",
                         linkName: "Who We Are",
-                        linkButtonName: ""
+                        linkButtonName: "",
+                        active: false
                     },
                     {   
                         linkType: "basic",
                         linkName: "What We Do",
-                        linkButtonName: ""
+                        linkButtonName: "",
+                        active: false
                     },
                     {   
                         linkType: "basic",
                         linkName: "Where We Work",
-                        linkButtonName: ""
+                        linkButtonName: "",
+                        active: false
                     },
                     {   
                         linkType: "basic+button",
                         linkName: "Careers ",
-                        linkButtonName: "Apply"
+                        linkButtonName: "Apply",
+                        active: false
                     },
                     {   
                         linkType: "basic",
                         linkName: "News",
-                        linkButtonName: ""
+                        linkButtonName: "",
+                        active: false
                     },
                     {   
                         linkType: "button",
                         linkName: "GET IN TOUCH NOW",
-                        linkButtonName: ""
+                        linkButtonName: "",
+                        active: false
                     }
 
                     
@@ -85,15 +92,46 @@ jumbotron:  {
             },
 footer: [
             {
-                title: "",
-                text: "",
-                button: ""
+                intestazione:{
+                                title: "Start Your Free Consultation",
+                                text: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.",
+                    
+                            },
+                button:     {
+                                name: "CONTACT US NOW",
+                                link: ""
+                            },
+               
             },
             {
-                img: "",
+                img: "../images/logo_seo_1x.png",
                 listOfLinks: [],
-                listOfCopyrights: [],
-                socialLinks: []
+                listOfCopyrights:   [
+                                        "© Copyright 2012 - 2020    |    ",
+                                        "Avada Them by Themefusion    |    ","All Rights Reserved    |    ","Powered by WordPress"
+                                    ],      
+                socialLinks: [
+                                {
+                                    id: "facebook",
+                                    img: "./images/icons/facebook-f.svg",
+                                    link: ""
+                                },
+                                {
+                                    id: "instagram",
+                                    img: "./images/icons/instagram.svg",
+                                    link: ""
+                                },
+                                {
+                                    id: "twitter",
+                                    img: "./images/icons/twitter.svg",
+                                    link: ""
+                                },
+                                {
+                                    id: "youtube",
+                                    img: "./images/icons/youtube.svg",
+                                    link: ""
+                                },
+                            ]
             }
     
         ],
